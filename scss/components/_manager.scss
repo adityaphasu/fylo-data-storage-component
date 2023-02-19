@@ -1,0 +1,35 @@
+@use "../base" as *;
+
+.manager {
+  @include card-bg-color();
+  @include border-radius();
+  border-top-right-radius: 6.25rem;
+  padding: 2.5rem;
+
+  @include mq(large) {
+    width: 21.875rem;
+  }
+
+  &__logo {
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    @include flex(center, flex-start, null);
+    gap: 1rem;
+  }
+
+  &__button {
+    @include border-radius();
+    background-color: $very-dark-blue;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-top: 0.3125rem;
+  }
+}
