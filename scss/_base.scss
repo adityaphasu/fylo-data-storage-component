@@ -3,7 +3,7 @@
 // COLORS
 
 $pale-blue: hsl(243, 100%, 93%);
-$grayish-blue: hsl(229, 7%, 55%);
+$grayish-blue: rgb(132, 135, 148);
 $dark-blue: hsl(229, 56%, 26%);
 $very-dark-blue: hsl(229, 57%, 11%);
 $white: hsl(0, 0%, 100%);
@@ -50,6 +50,33 @@ $breakpoints: (
 
   @media only screen and (min-width: $size) {
     @content;
+  }
+}
+
+// ANIMATIONS
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 

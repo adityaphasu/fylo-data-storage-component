@@ -58,6 +58,7 @@
     left: 4.5rem;
     background-color: $white;
     @include border-radius();
+    animation: scale-in 1000ms ease-in-out forwards;
 
     @include mq(large) {
       left: 19rem;
@@ -86,5 +87,6 @@
   &__number {
     color: $very-dark-blue;
     font-size: 2.5rem;
+    animation: pulsate 1s ease-in-out infinite both;
   }
 }
