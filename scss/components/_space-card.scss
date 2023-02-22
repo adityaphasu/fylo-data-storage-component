@@ -58,11 +58,12 @@
     left: 4.5rem;
     background-color: $white;
     @include border-radius();
-    animation: scale-in 1000ms ease-in-out forwards;
+    @include scale-in(50% 100%);
 
     @include mq(large) {
       left: 19rem;
       top: -3.2rem;
+      @include scale-in(100% 100%);
 
       &::after {
         @include before-after-block(1.375rem, 1.375rem);
