@@ -107,7 +107,7 @@ body {
 main {
   @include flex(null, null, column);
   width: 24rem;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 0 1.5625rem;
 
   @include mq(large) {
